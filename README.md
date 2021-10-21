@@ -34,6 +34,10 @@ php --version
 
 ### ingant versi PHP yang terinstall karena akan digunakan pada file configurasi nginx
 
+### biasanya, ketika menginstall PHP, maka akan ada web server lain yang otomatis akan ikut terinstall yaitu apache2. hal ini akan  membuat bentrok dengan web server nginx karena samasama menggunakan port 80 dan 443. untuk itu setelah install PHP kita bisa langsung uninstall bersih web server apache2 yang otomatis terinstall dengan cara:
+
+apt purge apache2
+
 ### langkah 9: konfigurasi nginx untuk mengenali PHP
 ### clone repository ini untuk mendapatkan konfigurasi default nginx PHP dengan megnetik:
 git clone https://github.com/tnromy/lemp
